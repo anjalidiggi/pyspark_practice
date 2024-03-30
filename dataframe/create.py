@@ -1,7 +1,7 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType, StructField, StringType
 
-spark = SparkSession.builder.appName("DataFrameExample").getOrCreate()
+spark = SparkSession.builder.appName("DataFrame").getOrCreate()
 
 data = [("Anjali",), ("Akanksha",), ("DJ",)]
 
