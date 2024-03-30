@@ -7,28 +7,21 @@ data = [("Anjali",), ("Abhishek",), ("Meera",), ("Amit",)]
 columns = ["name"]
 df = spark.createDataFrame(data, columns)
 
-# collect_set
 df_collect_set = df.select(collect_set("name")).show()
 
-# countDistinct
 df_count_distinct = df.select(countDistinct("name")).show()
 
-# count
 df_count = df.select(count("name")).show()
 
-# first
 df_first = df.select(first("name")).show()
 
-# last
 df_last = df.select(last("name")).show()
 
-# max
 df_max = df.select(max("name")).show()
 
-# min
 df_min = df.select(min("name")).show()
 
-# sum
 df_sum = df.select(sum("name")).show()
 
 spark.stop()
+
