@@ -8,4 +8,5 @@ columns = ["name"]
 df = spark.createDataFrame(data, columns)
 
 df_collect_list = df.select(collect_list("name")).show()
+
 spark.stop()
