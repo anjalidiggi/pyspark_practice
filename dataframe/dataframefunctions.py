@@ -1,7 +1,7 @@
 
 from pyspark.sql import SparkSession
 
-spark = SparkSession.builder.appName("DataFrameExample").getOrCreate()
+spark = SparkSession.builder.appName("DataFrame").getOrCreate()
 
 data = [("Anjali", 21), ("Akanksha", 22), ("DJ", 23)]
 columns = ["name", "age"]
