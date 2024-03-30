@@ -6,8 +6,6 @@ spark = SparkSession.builder.appName("Functions").getOrCreate()
 data = [("Anjali",), ("Abhishek",), ("Meera",), ("Amit",)]
 columns = ["name"]
 df = spark.createDataFrame(data, columns)
-# collect_list
-df_collect_list = df.select(collect_list("name")).show()
 
 # collect_set
 df_collect_set = df.select(collect_set("name")).show()
